@@ -42,4 +42,28 @@ public class IANAMediaTypeTest {
 
         Assert.assertEquals(Lang.JSONLD, IANAMediaType.resource2Lang(expectedResource));
     }
+    
+    @Test
+    public void testNull() {
+        Assert.assertNull(IANAMediaType.iri2ContentType(null));
+        Assert.assertNull(IANAMediaType.iri2ContentType("http://example.org/something"));
+        
+        Assert.assertNull(IANAMediaType.iri2Lang(null));
+        Assert.assertNull(IANAMediaType.iri2Lang("http://example.org/something"));
+        
+        Assert.assertNull(IANAMediaType.lang2Iri(null));
+        
+        Assert.assertNull(IANAMediaType.lang2Resource(null));
+
+        Resource randomResource = ResourceFactory.createResource("http://example.org/something");
+        Resource bNodeResource = ResourceFactory.createResource();
+        
+        Assert.assertNull(IANAMediaType.resource2ContentType(null));
+        Assert.assertNull(IANAMediaType.resource2ContentType(randomResource));
+        Assert.assertNull(IANAMediaType.resource2ContentType(bNodeResource));
+        
+        Assert.assertNull(IANAMediaType.resource2Lang(null));
+        Assert.assertNull(IANAMediaType.resource2Lang(randomResource));
+        Assert.assertNull(IANAMediaType.resource2Lang(bNodeResource));
+    }
 }

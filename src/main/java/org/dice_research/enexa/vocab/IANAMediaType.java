@@ -41,7 +41,7 @@ public class IANAMediaType {
      */
     // @CheckForNull
     public static String iri2ContentType(String iri) {
-        if (iri != null && iri.startsWith(iri)) {
+        if (iri != null && iri.startsWith(IRI)) {
             return iri.substring(IRI.length());
         } else {
             return null;
@@ -70,7 +70,7 @@ public class IANAMediaType {
      *         language is {@code null}.
      */
     // @CheckForNull
-    public static String lang2iri(Lang lang) {
+    public static String lang2Iri(Lang lang) {
         if (lang != null) {
             return IRI + lang.getContentType().getContentTypeStr();
         } else {
@@ -89,7 +89,7 @@ public class IANAMediaType {
     // @CheckForNull
     public static Resource lang2Resource(Lang lang) {
         if (lang != null) {
-            return ResourceFactory.createResource(lang2iri(lang));
+            return ResourceFactory.createResource(lang2Iri(lang));
         } else {
             return null;
         }
