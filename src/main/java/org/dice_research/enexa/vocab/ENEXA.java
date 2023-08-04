@@ -30,6 +30,22 @@ public class ENEXA {
 
     protected static final String uri = "http://w3id.org/dice-research/enexa/ontology#";
 
+    // Resources sorted alphabetically
+    public static final Resource Module = resource("Module");
+    public static final Resource ModuleInstance = resource("ModuleInstance");
+    public static final Resource Experiment = resource("Experiment");
+
+
+    // Properties sorted alphabetically
+    public static final Property containerName = property("containerName");
+    public static final Property containerStatus = property("containerStatus");
+    public static final Property experiment = property("experiment");
+    public static final Property location = property("location");
+    public static final Property metaDataEndpoint = property("metaDataEndpoint");
+    public static final Property metaDataGraph = property("metaDataGraph");
+    public static final Property moduleURL = property("moduleURL");
+    public static final Property sharedDirectory = property("sharedDirectory");
+
     /**
      * returns the URI for this schema
      *
@@ -48,20 +64,4 @@ public class ENEXA {
     protected static final Property property(String local) {
         return ResourceFactory.createProperty(uri, local);
     }
-
-    // Resources sorted alphabetically
-    public static final Resource Module = resource("Module");
-    public static final Resource ModuleInstance = resource("ModuleInstance");
-    public static final Resource Experiment = resource("Experiment");
-
-
-    // Properties sorted alphabetically
-    public static final Property containerName = property("containerName");
-    public static final Property containerStatus = property("containerStatus");
-    public static final Property experiment = property("experiment");
-    public static final Property location = property("location");
-    public static final Property metaDataEndpoint = property("metaDataEndpoint");
-    public static final Property metaDataGraph = property("metaDataGraph");
-    public static final Property moduleURL = property("moduleURL");
-    public static final Property sharedDirectory = property("sharedDirectory");
 }

@@ -62,7 +62,7 @@ public class EnexaPathUtils {
      *         graph or {@code null} if the given local path is not in the given
      *         shared directory.
      */
-//    @CheckForNull
+    // @CheckForNull
     public static String translateLocal2EnexaPath(String localPath, String sharedDir) {
         String shared = getCheckedShared(sharedDir);
         if (!localPath.startsWith(shared)) {

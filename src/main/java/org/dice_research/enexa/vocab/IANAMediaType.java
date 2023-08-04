@@ -39,7 +39,7 @@ public class IANAMediaType {
      *         given IRI is {@code null} or if it does not belong to the IANA
      *         vocabulary namespace.
      */
-//    @CheckForNull
+    // @CheckForNull
     public static String iri2ContentType(String iri) {
         if (iri != null && iri.startsWith(iri)) {
             return iri.substring(IRI.length());
@@ -57,7 +57,7 @@ public class IANAMediaType {
      *         IRI is {@code null} or if it does not belong to the IANA vocabulary
      *         namespace or if it does not represent a known RDF language.
      */
-//    @CheckForNull
+    // @CheckForNull
     public static Lang iri2Lang(String iri) {
         return RDFLanguages.contentTypeToLang(iri2ContentType(iri));
     }
@@ -69,7 +69,7 @@ public class IANAMediaType {
      * @return the IANA IRI for the given RDF language or {@code null} if the given
      *         language is {@code null}.
      */
-//    @CheckForNull
+    // @CheckForNull
     public static String lang2iri(Lang lang) {
         if (lang != null) {
             return IRI + lang.getContentType().getContentTypeStr();
@@ -86,7 +86,7 @@ public class IANAMediaType {
      * @return the given RDF language in the IANA vocabulary or {@code null} if the
      *         given language is {@code null}.
      */
-//    @CheckForNull
+    // @CheckForNull
     public static Resource lang2Resource(Lang lang) {
         if (lang != null) {
             return ResourceFactory.createResource(lang2iri(lang));
@@ -104,7 +104,7 @@ public class IANAMediaType {
      *         given Resource is {@code null} or if it does not belong to the IANA
      *         vocabulary namespace.
      */
-//    @CheckForNull
+    // @CheckForNull
     public static String resource2ContentType(Resource ianaResource) {
         if (ianaResource != null && ianaResource.isURIResource()) {
             return iri2ContentType(ianaResource.getURI());
@@ -124,7 +124,7 @@ public class IANAMediaType {
      *         vocabulary namespace or if it does not represent a known RDF
      *         language.
      */
-//    @CheckForNull
+    // @CheckForNull
     public static Lang resource2Lang(Resource ianaResource) {
         if (ianaResource != null && ianaResource.isURIResource()) {
             return iri2Lang(ianaResource.getURI());
