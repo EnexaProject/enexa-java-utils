@@ -1,0 +1,6 @@
+* Some utility classes for Java projects in ENEXA
+** Build
+The library can be compiled using:
+#+begin_src shell :results output silent
+make build
+#+end_src
