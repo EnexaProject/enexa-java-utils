@@ -32,6 +32,24 @@ public class IANAMediaType {
     }
 
     /**
+     * This method returns the IRI for the given content type String. Note that the
+     * content type is not checked further, i.e., it is not guaranteed that the
+     * generated IRI is valid.
+     * 
+     * @param contentType the content type that should be transformed into an IRI
+     * @return the IRI for the given content type or {@code null} if the given
+     *         content type is {@code null}.
+     */
+    // @CheckForNull
+    public static String contentType2Iri(String contentType) {
+        if (contentType != null) {
+            return IRI + contentType;
+        } else {
+            return null;
+        }
+    }
+
+    /**
      * This method returns the content type String for the given IANA IRI.
      * 
      * @param iri the IRI for which the content type String should be returned.
