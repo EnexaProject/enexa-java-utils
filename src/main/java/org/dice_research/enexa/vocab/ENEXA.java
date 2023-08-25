@@ -37,6 +37,7 @@ public class ENEXA {
 
 
     // Properties sorted alphabetically
+    public static final Property containerId = property("containerId");
     public static final Property containerName = property("containerName");
     public static final Property containerStatus = property("containerStatus");
     public static final Property experiment = property("experiment");
