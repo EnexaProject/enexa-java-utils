@@ -41,6 +41,7 @@ public class ENEXA {
     public static final Property containerName = property("containerName");
     public static final Property containerStatus = property("containerStatus");
     public static final Property experiment = property("experiment");
+    public static final Property exposesPort = property("exposes_port");
     // External endpoint URL (outside the cluster/network, public-facing)
     public static final Property externalEndpointURL = property("externalEndpointURL");
     // Internal endpoint URL (within the cluster/network)
