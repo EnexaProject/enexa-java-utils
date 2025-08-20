@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix enexa: <http://w3id.org/dice-research/enexa/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# --- Classes ---
+
+enexa:Module
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:comment "Instances of this class are ENEXA modules."^^xsd:string ;
+  rdfs:label "Module"^^xsd:string .
+
+enexa:ModuleInstance
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:comment "Instances of this class are instances of ENEXA modules."^^xsd:string ;
+  rdfs:label "Module Instance"^^xsd:string .
+
+enexa:Experiment
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:comment "Instances of this class are experiments executed by the ENEXA platform."^^xsd:string ;
+  rdfs:label "Experiment"^^xsd:string .
+
+# --- Properties ---
+
+enexa:containerId
+  rdf:type rdf:Property .
+
+enexa:containerName
+  rdf:type rdf:Property .
+
+enexa:containerStatus
+  rdf:type rdf:Property .
+
+enexa:experiment
+  rdf:type rdf:Property .
+
+enexa:location
+  rdf:type rdf:Property .
+
+enexa:metaDataEndpoint
+  rdf:type rdf:Property .
+
+enexa:metaDataGraph
+  rdf:type rdf:Property .
+
+enexa:moduleURL
+  rdf:type rdf:Property .
+
+enexa:sharedDirectory
+  rdf:type rdf:Property .
