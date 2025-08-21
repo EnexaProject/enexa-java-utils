@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix alg: <http://www.w3id.org/dice-research/ontologies/algorithm/2023/06/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# --- Classes ---
+
+alg:AlgorithmDataRelation
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:comment "The relation between an algorithm and data that it consumes or produces."^^xsd:string ;
+  rdfs:label "Algorithm data relation"^^xsd:string .
+
+alg:AlgorithmExecution
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:comment "The execution of an algorithm setup."^^xsd:string ;
+  rdfs:label "Algorithm execution"^^xsd:string .
+
+alg:AlgorithmSetup
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:comment "The general setup of an algorithm, including the configuration of parameters."^^xsd:string ;
+  rdfs:label "Algorithm setup"^^xsd:string .
+
+alg:Parameter
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:subClassOf alg:AlgorithmDataRelation ;
+  rdfs:comment "The class of algorithm parameters."^^xsd:string ;
+  rdfs:label "Parameter"^^xsd:string .
+
+alg:Result
+  rdf:type owl:Class, rdfs:Class ;
+  rdfs:subClassOf alg:AlgorithmDataRelation ;
+  rdfs:comment "The class of algorithm results."^^xsd:string ;
+  rdfs:label "Result"^^xsd:string .
+
+# --- Properties ---
+
+alg:instanceOf
+  rdf:type rdf:Property .
+
+alg:parameter
+  rdf:type rdf:Property .
+
+alg:produces
+  rdf:type rdf:Property .
+
+alg:subExecution
+  rdf:type rdf:Property .
