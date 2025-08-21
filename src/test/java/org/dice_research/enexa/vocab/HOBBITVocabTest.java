@@ -9,12 +9,12 @@ import org.dice_research.rdf.test.VocabularyClassTestHelper;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AlgorithmVocabTest {
+public class HOBBITVocabTest {
 
     @Test
     public void test() throws MalformedURLException, AssertionError {
-        Model model = ModelComparisonHelper.loadModel((new File("algorithm.ttl")).toURI().toURL());
+        Model model = ModelComparisonHelper.loadModel((new File("HOBBIT.ttl")).toURI().toURL());
         Assert.assertNotNull(model);
-        VocabularyClassTestHelper.runTest(model, Algorithm.class, Algorithm.getURI());
+        VocabularyClassTestHelper.runTest(model, HOBBIT.class, HOBBIT.getURI());
     }
 }

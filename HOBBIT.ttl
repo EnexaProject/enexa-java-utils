@@ -1,0 +1,201 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix hobbit: <http://w3id.org/hobbit/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# --- Classes ---
+
+hobbit:AnalysisAlgorithm
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:AnalysisResult
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:AnalysisResultset
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:API
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:AscendingOrder
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:Benchmark
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:Challenge
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:ChallengeTask
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:ConfigurableParameter
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:DescendingOrder
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:Error
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:Experiment
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:FeatureParameter
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:ForwardedParameter
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:Hardware
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:KPI
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:KPISeq
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:Parameter
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:PearsonAlgorithm
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:System
+  rdf:type owl:Class, rdfs:Class .
+
+hobbit:SystemInstance
+  rdf:type owl:Class, rdfs:Class .
+
+# --- Properties ---
+
+hobbit:algorithm
+  rdf:type rdf:Property .
+
+hobbit:comprises
+  rdf:type rdf:Property .
+
+hobbit:closed
+  rdf:type rdf:Property .
+
+hobbit:dateOfNextExecution
+  rdf:type rdf:Property .
+
+hobbit:defaultValue
+  rdf:type rdf:Property .
+
+hobbit:endTime
+  rdf:type rdf:Property .
+
+hobbit:executionDate
+  rdf:type rdf:Property .
+
+hobbit:executionPeriod
+  rdf:type rdf:Property .
+
+hobbit:hasAPI
+  rdf:type rdf:Property .
+
+hobbit:hasCPUTypeCount
+  rdf:type rdf:Property .
+
+hobbit:hasDisks
+  rdf:type rdf:Property .
+
+hobbit:hasFileSystem
+  rdf:type rdf:Property .
+
+hobbit:hasMemory
+  rdf:type rdf:Property .
+
+hobbit:hasModel
+  rdf:type rdf:Property .
+
+hobbit:hasNetworkAdapters
+  rdf:type rdf:Property .
+
+hobbit:hasOS
+  rdf:type rdf:Property .
+
+hobbit:hasParameter
+  rdf:type rdf:Property .
+
+hobbit:hasProcessors
+  rdf:type rdf:Property .
+
+hobbit:hasRAM
+  rdf:type rdf:Property .
+
+hobbit:hobbitPlatformVersion
+  rdf:type rdf:Property .
+
+hobbit:image
+  rdf:type rdf:Property .
+
+hobbit:imageName
+  rdf:type rdf:Property .
+
+hobbit:implementsAPI
+  rdf:type rdf:Property .
+
+hobbit:instanceOf
+  rdf:type rdf:Property .
+
+hobbit:involvesBenchmark
+  rdf:type rdf:Property .
+
+hobbit:involvesKPI
+  rdf:type rdf:Property .
+
+hobbit:involvesParameter
+  rdf:type rdf:Property .
+
+hobbit:involvesSystemInstance
+  rdf:type rdf:Property .
+
+hobbit:isPartOf
+  rdf:type rdf:Property .
+
+hobbit:isTaskOf
+  rdf:type rdf:Property .
+
+hobbit:measuresKPI
+  rdf:type rdf:Property .
+
+hobbit:organizer
+  rdf:type rdf:Property .
+
+hobbit:publicationDate
+  rdf:type rdf:Property .
+
+hobbit:ranking
+  rdf:type rdf:Property .
+
+hobbit:rankingKPIs
+  rdf:type rdf:Property .
+
+hobbit:registrationCutoffDate
+  rdf:type rdf:Property .
+
+hobbit:relevantForAnalysis
+  rdf:type rdf:Property .
+
+hobbit:startTime
+  rdf:type rdf:Property .
+
+hobbit:terminatedWithError
+  rdf:type rdf:Property .
+
+hobbit:usesImage
+  rdf:type rdf:Property .
+
+hobbit:version
+  rdf:type rdf:Property .
+
+hobbit:visible
+  rdf:type rdf:Property .
+
+hobbit:wasCarriedOutOn
+  rdf:type rdf:Property .

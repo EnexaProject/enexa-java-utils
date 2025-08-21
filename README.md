@@ -10,6 +10,6 @@ The library can be compiled using:
 make build
 ```
 
-The project documentation can be found [here](https://enexa.eu/documentation). 
-For the repository-specific documentation, 
+The project documentation can be found [here](https://enexa.eu/documentation).
+For the repository-specific documentation,
 visit [this link](https://enexa.eu/documentation/enexa-java-utils.html).
