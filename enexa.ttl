@@ -35,6 +35,15 @@ enexa:containerStatus
 enexa:experiment
   rdf:type rdf:Property .
 
+enexa:exposesPort
+  rdf:type rdf:Property .
+
+enexa:externalEndpointURL
+  rdf:type rdf:Property .
+
+enexa:internalEndpointURL
+  rdf:type rdf:Property .
+
 enexa:location
   rdf:type rdf:Property .
 
